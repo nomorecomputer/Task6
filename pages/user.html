@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <title>index</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main class="bg-natural-95"></main>
+    <div class="container py-7">
+      <!-- #region 1 1st rowing 跨 各 tabPenel之上 -->
+      <div class="row justify-content-center py-20">
+        <!-- #region 1-1 內部限制 col-10 大容器 -->
+        <div class="col-10">
+          <!-- #region 1-1-1 三大 Tab  -->
+          <ul
+            class="nav nav-pills mb-5 justify-content-center tab-btn-bg"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item me-4" role="presentation">
+              <button
+                class="nav-link border radius-12 radius-sm-16"
+                id="pills-personInfo-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-personInfo"
+                type="button"
+                role="tab"
+                aria-controls="pills-personInfo"
+                aria-selected="true"
+              >
+                <span class="material-icons-outlined me-1 align-bottom">
+                  face
+                </span>
+                個人資料
+              </button>
+            </li>
+            <li class="nav-item me-4" role="presentation">
+              <button
+                class="nav-link border radius-12 radius-sm-16"
+                id="pills-bookingRec-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-bookingRec"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                <span class="material-icons-outlined me-1 align-bottom">
+                  pending_actions
+                </span>
+                預約紀錄
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link border radius-12 radius-sm-16 active"
+                id="pills-travelPlan-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-travelPlan"
+                type="button"
+                role="tab"
+                aria-controls="pills-travelPlan"
+                aria-selected="false"
+              >
+                <span class="material-icons-outlined me-1 align-bottom">
+                  list_alt
+                </span>
+
+                職旅計畫
+              </button>
+            </li>
+          </ul>
+          <!-- #endregion 1-1-1  -->
+          <!-- #region 1-1-2 三大 Tab Panels  -->
+          <div
+            class="tab-content radius-16 radius-sm-24 bg-white p-5 p-md-6 mb-6 mb-sm-7 shadow"
+            id="pills-tabContent"
+          >
+            <!--  個人資料 tabPanel 內容 -->
+            <%- include('./layout/personelInfo.ejs'); -%>
+
+            <!--  預約紀錄 tabPanel 內容  -->
+            <%- include('./layout/booking.ejs'); -%>
+
+            <!--  職旅計畫 tabPanel 內容 -->
+            <%- include('./layout/careerPlan.ejs') -%>
+          </div>
+          <!-- #endregion 1-1-2 -->
+        </div>
+        <!-- #endregion 1-1 -->
+      </div>
+      <!-- #endregion 1  -->
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script src="/assets/js/getParameter.js"></script>
+  </body>
+</html>

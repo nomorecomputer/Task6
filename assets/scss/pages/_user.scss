@@ -1,0 +1,23 @@
+tab-btn-bg {
+  .nav-link {
+    background-color: $white;
+  }
+}
+
+tr .disabled {
+  color: gray;
+}
+
+.leftSide-width-300 {
+  width: 300px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1rem;
+  .email-ps {
+    display: block;
+    position: absolute;
+    bottom: -0.8rem;
+  }
+}

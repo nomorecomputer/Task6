@@ -1,0 +1,10 @@
+.normal-height {
+  height: 160px !important;
+}
+
+.smal-height {
+  height: 53px !important;
+  @media (min-width: 768px) {
+    height: 56px !important;
+  }
+}

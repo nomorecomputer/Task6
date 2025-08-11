@@ -1,0 +1,46 @@
+/* 標籤的基本樣式 */
+body {
+  letter-spacing: 0.02em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+}
+
+.container {
+  max-width: 1320px; /*  1296 add  pl、 pr :12px +12px */
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.radius-8 {
+  border-radius: 8px;
+}
+.radius-12 {
+  border-radius: 12px !important;
+}
+.radius-16 {
+  border-radius: 16px !important;
+}
+.radius-24 {
+  border-radius: 24px !important;
+}
+
+@media (min-width: 576px) {
+  .radius-sm-12 {
+    border-radius: 12px !important;
+  }
+  .radius-sm-16 {
+    border-radius: 16px !important;
+  }
+  .radius-sm-24 {
+    border-radius: 24px !important;
+  }
+}

@@ -1,0 +1,38 @@
+<!--  職旅計畫 tabPanel 內容 -->
+<div
+  class="tab-pane fade show active"
+  id="pills-travelPlan"
+  role="tabpanel"
+  aria-labelledby="pills-travelPlan-tab"
+  tabindex="2"
+>
+  <form action="">
+    <!-- 3-1. 職旅計畫概況 -->
+    <%- include('./layout/careerPlan_Suy1.ejs'); -%>
+    <!--  3-2. 職涯規劃 -->
+    <%- include('./layout/careerPlan_Suy2.ejs'); -%>
+    <!--  3-3. 專業技能區塊  -->
+    <%- include('./layout/careerPlan_Suy3.ejs'); -%>
+    <!--  3-4. 教育背景  -->
+    <%- include('./layout/careerPlan_Suy4.ejs'); -%>
+
+    <div class="d-flex justify-content-center">
+      <button
+        type="button"
+        class="btn fs-7 fs-sm-6 me-2 btn-outline-dark border radius-12 radius-sm-16"
+      >
+        匯出 PDF<span class="material-icons-outlined me-1 align-bottom">
+          chevron_right
+        </span>
+      </button>
+      <button
+        type="button"
+        class="btn fs-7 fs-sm-6 me-2 btn-dark radius-12 radius-sm-16"
+      >
+        儲存更新<span class="material-icons-outlined me-1 align-bottom">
+          chevron_right
+        </span>
+      </button>
+    </div>
+  </form>
+</div>

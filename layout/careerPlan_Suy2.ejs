@@ -1,0 +1,374 @@
+<!-- #region 3-2. 職涯規劃 -->
+<div class="d-flex gap-4 border-bottom pb-5 pb-md-6 mb-5 mb-md-6">
+  <!--  3-2-left aside -->
+  <div class="flex-shrink-0 leftSide-width-300 d-none d-md-block">
+    <h2 class="fs-4 mb-3">職涯規劃</h2>
+    <span class="text-natural-50 me-1">欄位皆為</span>
+    <span class="badge text-bg-danger border rounded-xl fs-7">必填</span>
+  </div>
+  <!-- 3-2-right main -->
+  <div class="w-100">
+    <div class="d-flex d-md-none mb-4 justify-content-between">
+      <h2 class="fs-9 d-inline">職涯規劃</h2>
+      <div>
+        <span class="fs-7 text-natural-50 me-1">欄位皆為</span>
+        <span class="badge text-bg-danger border rounded-xl fs-7">必填</span>
+      </div>
+    </div>
+    <!-- 調查 3-2-1 短期職涯目標 -->
+    <div class="mb-4 mb-md-5">
+      <div class="form-floating">
+        <textarea
+          class="form-control radius-8 normal-height"
+          placeholder="1年短期職涯目標"
+          id="shorttermGoal"
+          maxlength="300"
+        ></textarea>
+        <label for="shorttermGoal" class="fs-7 fs-md-6 text-black"
+          >1年短期職涯目標（最多 300 字）</label
+        >
+      </div>
+    </div>
+    <!-- 調查  3-2-2 中長期職涯願景 -->
+    <div class="mb-4 mb-md-5">
+      <div class="form-floating">
+        <textarea
+          class="form-control radius-8 normal-height"
+          placeholder="職業摘要"
+          id="longtermVision"
+          maxlength="300"
+        ></textarea>
+        <label for="longtermVision" class="fs-7 fs-md-6 text-black"
+          >1-3年中長期職涯願景（最多 300 字）</label
+        >
+      </div>
+    </div>
+    <!-- 3-2-3. 理想工作模式 -->
+    <div class="mb-4 mb-md-5">
+      <h4 class="mb-2 fs-7 fs-md-6">理想理想工作模式</h4>
+      <div class="px-2">
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="idealWorkingModel"
+            id="workinOffice"
+            value="workinOffice"
+            checked
+          />
+          <label class="form-check-label fs-7" for="workinOffice">
+            固定辦公室工作
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="idealWorkingModel"
+            id="workatOfficeandHome"
+            value="workatOfficeandHome"
+          />
+          <label class="form-check-label fs-7" for="workatOfficeandHome">
+            混合式工作(辦公室+遠端)
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="idealWorkingModel"
+            id="workFixedRemote"
+            value="workFixedRemote"
+          />
+          <label class="form-check-label fs-7" for="workFixedRemote">
+            完全遠端工作(固定地點)
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="idealWorkingModel"
+            id="workAsDigitalNomad"
+            value="workAsDigitalNomad"
+          />
+          <label class="form-check-label fs-7" for="workAsDigitalNomad">
+            數位遊牧(邊工作邊旅行)
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="idealWorkingModel"
+            id="workAsOthers"
+            value="workAsOthers"
+          />
+          <label class="form-check-label fs-7" for="workAsOthers">
+            其他(請說明)工作模式
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- 3-2-4 目標薪資/收入 -->
+    <div class="mb-4 mb-md-5">
+      <div class="form-floating">
+        <textarea
+          class="form-control smal-height"
+          placeholder="作品展示區"
+          id="targetSalary"
+        ></textarea>
+        <label for="targetSalary" class="fs-7 fs-md-6 text-black"
+          >目標薪資/收入</label
+        >
+      </div>
+    </div>
+    <!-- 3-2-5 目前面臨的職涯挑戰 -->
+    <div class="mb-4 mb-md-5">
+      <h4 class="mb-2 fs-7 fs-md-6">目前面臨的職涯挑戰</h4>
+      <div class="px-2">
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="careerChallenge"
+            id="unclearGoal"
+            value="unclearGoal"
+            checked
+          />
+          <label class="form-check-label fs-7" for="unclearGoal">
+            方向不明確
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="careerChallenge"
+            id="poorSkill"
+            value="unclearGoal"
+          />
+          <label class="form-check-label fs-7" for="poorSkill">
+            技能需要提升
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="careerChallenge"
+            id="unstableIncome"
+            value="unstableIncome"
+          />
+          <label class="form-check-label fs-7" for="unstableIncome">
+            收入不穩定
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="careerChallenge"
+            id="salesIssue"
+            value="salesIssue"
+          />
+          <label class="form-check-label fs-7" for="salesIssue">
+            客戶開發困難
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="careerChallenge"
+            id="timeIssue"
+            value="timeIssue"
+          />
+          <label class="form-check-label fs-7" for="timeIssue">
+            時間管理問題
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="careerChallenge"
+            id="lifeUnbalance"
+            value="lifeUnbalance"
+          />
+          <label class="form-check-label fs-7" for="lifeUnbalance">
+            工作生活失衡
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="careerChallenge"
+            id="shortOfRelationship"
+            value="shortOfRelationship"
+          />
+          <label class="form-check-label fs-7" for="shortOfRelationship">
+            缺乏人脈資源
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="careerChallenge"
+            id="otherReasons"
+            value="otherReasons"
+          />
+          <label class="form-check-label fs-7" for="otherReasons">
+            其他(請說明)
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- 3-2-6 期望獲得的協助與資源 -->
+    <div class="mb-4 mb-md-5">
+      <h4 class="mb-2 fs-7 fs-md-6">期望獲得的協助與資源</h4>
+      <div class="px-2">
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="supportNeeded"
+            id="careerDirectionGuide"
+            value="careerDirectionGuide"
+          />
+          <label class="form-check-label fs-7" for="careerDirectionGuide">
+            職涯方向指導
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="supportNeeded"
+            id="techImproveAdvise"
+            value="techImproveAdvise"
+          />
+          <label class="form-check-label fs-7" for="techImproveAdvise">
+            專業技能提升建議
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="supportNeeded"
+            id="personalBrandBuild"
+            value="personalBrandBuild"
+          />
+          <label class="form-check-label fs-7" for="personalBrandBuild">
+            個人品牌建立
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="supportNeeded"
+            id="pricingStrategy"
+            value="pricingStrategy"
+          />
+          <label class="form-check-label fs-7" for="pricingStrategy">
+            接案策略與定價
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="supportNeeded"
+            id="customerDevelopment"
+            value="customerDevelopment"
+          />
+          <label class="form-check-label fs-7" for="customerDevelopment">
+            客戶開發方法
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="supportNeeded"
+            id="financePlanning"
+            value="financePlanning"
+          />
+          <label class="form-check-label fs-7" for="financePlanning">
+            財務規劃
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="supportNeeded"
+            id="balacing"
+            value="balacing"
+          />
+          <label class="form-check-label fs-7" for="balacing">
+            工作生活平衡
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="supportNeeded"
+            id="otherNeeded"
+            value="otherNeeded"
+          />
+          <label class="form-check-label fs-7" for="otherNeeded">
+            其他(請說明)
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- 3-2-7 感興趣的服務方案 -->
+    <div class="mb-4 mb-md-5">
+      <h4 class="mb-2 fs-7 fs-md-6">感興趣的服務方案</h4>
+      <div class="px-2">
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="serviceTypeFavored"
+            id="explorePositioning"
+            value="explorePositioning"
+          />
+          <label class="form-check-label fs-7" for="explorePositioning">
+            探索定位
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="serviceTypeFavored"
+            id="customerized"
+            value="customerized"
+          />
+          <label class="form-check-label fs-7" for="customerized">
+            客製化方案
+          </label>
+        </div>
+        <div class="form-check form-check-inline mb-2 me-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="serviceTypeFavored"
+            id="practicalGuidance"
+            value="practicalGuidance"
+          />
+          <label class="form-check-label fs-7" for="practicalGuidance">
+            實戰引導
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
