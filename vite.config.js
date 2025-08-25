@@ -25,7 +25,7 @@ function moveOutputPlugin() {
 export default defineConfig({
   // base 的寫法:
   // base: 'Task6_LV1'
-  base: "Task6",
+  base: "/Task6/",
   plugins: [
     liveReload(["./layout/**/*.ejs", "./pages/**/*.ejs", "./pages/**/*.html"]),
     ViteEjsPlugin(),
@@ -33,7 +33,7 @@ export default defineConfig({
   ],
   server: {
     // 啟動 server 時預設開啟的頁面
-    open: "pages/index.html",
+    open: "pages/user.html",
   },
   build: {
     rollupOptions: {
